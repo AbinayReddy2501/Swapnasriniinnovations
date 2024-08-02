@@ -65,6 +65,7 @@
             color: #333;
             padding: 5rem 1rem;
             text-align: center;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
         }
 
         .hero h2 {
@@ -253,7 +254,7 @@
             </div>
             <div class="service-item">
                 <h3>Digital Marketing</h3>
-                <p>Strategies to elevate your online presence and drive results.</p>
+                <p>Innovative digital marketing strategies to boost your online presence.</p>
             </div>
         </div>
     </section>
@@ -261,35 +262,35 @@
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Swapnasrini Innovations is dedicated to providing cutting-edge solutions in software development and digital marketing. Our team of experts is committed to delivering exceptional results and exceeding client expectations.</p>
+            <p>Swapnasrini Innovations is committed to delivering cutting-edge solutions in software development and digital marketing. Our team of experts works tirelessly to ensure our clients achieve their business goals.</p>
         </div>
     </section>
 
     <section id="team">
         <div class="container">
-            <h2>Meet Our Team</h2>
+            <h2>Our Team</h2>
             <div class="team-member">
                 <h3>Kasi Reddy Abinay Reddy</h3>
-                <p>MD & CEO</p>
+                <p>Managing Director & CEO</p>
             </div>
             <div class="team-member">
-                <h3>Kasi Reddy Srinivas Reddy</h3>
+                <h3>Kasireddy Srinivas Reddy</h3>
                 <p>Director</p>
             </div>
             <div class="team-member">
-                <h3>Kasi Reddy Swapna Latha</h3>
+                <h3>Kasireddy Swapna Latha</h3>
                 <p>Director</p>
             </div>
             <div class="team-member">
-                <h3>Kasi Reddy Nishith Reddy</h3>
+                <h3>Kasireddy Nishith Reddy</h3>
                 <p>Director</p>
             </div>
             <div class="team-member">
-                <h3>Kasi Reddy Agam Reddy</h3>
+                <h3>Kasireddy Agam Reddy</h3>
                 <p>Director</p>
             </div>
             <div class="team-member">
-                <h3>Kasi Reddy Sujatha</h3>
+                <h3>Kasireddy Sujatha</h3>
                 <p>Director</p>
             </div>
             <div class="team-member">
@@ -306,10 +307,16 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -318,18 +325,6 @@
     <footer>
         <p>&copy; 2024 Swapnasrini Innovations. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
 
